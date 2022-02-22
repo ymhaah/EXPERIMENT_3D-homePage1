@@ -1,0 +1,10 @@
+section .Container .Hero {
+	width: 100%;
+	height: 400vh;
+}
+
+section .Container .Hero .Hero-Text {
+}
+
+section .Container .Hero .Hero-Star {
+}

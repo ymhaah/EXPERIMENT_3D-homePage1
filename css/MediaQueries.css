@@ -1,0 +1,73 @@
+@media screen and (max-width: 2560px) {
+	html {
+		font-size: 18px;
+	}
+	.Container {
+		width: 80%;
+	}
+} /*For 4K */
+
+@media screen and (max-width: 1600px) {
+	html {
+		font-size: 12px;
+	}
+	.Container {
+		width: 90%;
+	}
+} /*For L Monitor */
+
+@media screen and (max-width: 1440px) {
+	.Container {
+	}
+} /*For Monitor */
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 10px;
+	}
+	.Container {
+	}
+}
+@media screen and (min-width: 1024px) {
+	section .Container .Hero {
+	}
+} /*For laptop, S-Monitor */
+
+@media screen and (min-width: 769px) {
+	header .Container nav .nList {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Container {
+	}
+	header .Container nav {
+		width: auto;
+	}
+	header .Container nav ul {
+		display: none;
+	}
+	header .Container .exbend ul {
+		width: 100%;
+		height: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		font-size: var(--MFontSize);
+	}
+	button,
+	[button] {
+		width: 100%;
+	}
+} /*For tablets */
+
+@media screen and (max-width: 425px) {
+	.Container {
+	}
+} /*For M,L phones */
+
+@media screen and (max-width: 320px) {
+	.Container {
+	}
+} /*For S phones */

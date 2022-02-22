@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	/* header */
+	--Header-hight: 4rem;
+	--Header-Nav-width: 30em;
+	--Header-icon-hight: 30px;
+	/* color */
+	--MColor: black;
+	--SColor: white;
+	--BColor: red;
+	--TColor: black;
+	/* font */
+	--Main-Font: "Open Sans", sans-serif;
+	--MFontSize: 4rem;
+	--SFontSize: 1.7rem;
+	--bold: 700;
+	--light: 400;
+	/* button */
+	--buttonBorder: 2px solid black;
+	--buttonRadius: 10px;
+	--buttonPadding: 16px 24px;
+	--buttonMargin: 8px;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 12px;
+}
+
+body {
+	font-family: var(--Main-Font);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: overlay;
+}
+
+header {
+	width: 100vw;
+	height: var(--Header-hight);
+}
+
+section {
+	width: 100vw;
+}
+
+section .Container {
+}
+
+a,
+li,
+ul,
+button {
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+button,
+[button] {
+	border: var(--buttonBorder);
+	border-radius: var(--buttonRadius);
+	background-color: var(--BColor);
+	color: var(--TColor);
+	font-weight: var(--bold);
+	font-size: var(--SFontSize);
+	padding: var(--buttonPadding);
+	margin: var(--buttonMargin);
+	line-height: 1.5;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.Container {
+	margin-inline: auto;
+}

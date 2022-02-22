@@ -1,0 +1,81 @@
+header .Container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+header .Container .Logo {
+	width: 5rem;
+	height: 90%;
+	background-color: brown;
+	cursor: pointer;
+}
+header .Container nav {
+	font-size: 2rem;
+	width: var(--Header-Nav-width);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header .Container nav ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+header .Container nav .nList {
+	width: var(--Header-icon-hight);
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+header .Container nav .nList span:nth-child(1) {
+	display: none;
+}
+header .Container nav .nList span:nth-child(2),
+header .Container nav .nList span:nth-child(3),
+header .Container nav .nList span:nth-child(4) {
+	width: 100%;
+	height: 3px;
+	background-color: hsl(207, 4%, 48%);
+}
+header .Container nav .navList span:nth-child(1) {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	display: block;
+	font-size: 4rem;
+}
+header .Container nav .navList span:nth-child(2),
+header .Container nav .navList span:nth-child(3),
+header .Container nav .navList span:nth-child(4) {
+	display: none;
+}
+header .Container .exbend {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: brown;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: navOpen;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	animation-fill-mode: forwards;
+	z-index: 10;
+}
+@keyframes navOpen {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+	}
+}
