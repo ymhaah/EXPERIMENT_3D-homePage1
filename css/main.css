@@ -5,10 +5,6 @@
 }
 
 :root {
-	/* header */
-	--Header-hight: 4rem;
-	--Header-Nav-width: 30em;
-	--Header-icon-hight: 30px;
 	/* color */
 	--MColor: black;
 	--SColor: white;
@@ -24,7 +20,7 @@
 	--buttonBorder: 2px solid black;
 	--buttonRadius: 10px;
 	--buttonPadding: 16px 24px;
-	--buttonMargin: 8px;
+	--buttonMargin: 8px 0;
 }
 
 html {
@@ -79,6 +75,19 @@ button,
 	display: inline-flex;
 	justify-content: center;
 	text-align: center;
+}
+
+.animation {
+	animation-name: starMove;
+	animation-duration: var(--animation-duration);
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes starMove {
+	to {
+		transform: rotateY(var(--Hero-star-rotateY)) translate(0, 0);
+	}
 }
 
 .Container {

@@ -1,3 +1,9 @@
+:root {
+	--Header-hight: 4rem;
+	--Header-Nav-width: 30em;
+	--Header-icon-hight: 30px;
+}
+
 header .Container {
 	height: 100%;
 	display: flex;
@@ -56,26 +62,23 @@ header .Container nav .navList span:nth-child(4) {
 	display: none;
 }
 header .Container .exbend {
+	width: 100vw;
+	height: 100vh;
 	position: absolute;
-	top: 0px;
+	top: -100%;
 	right: 0px;
 	background-color: brown;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	animation-name: navOpen;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 	animation-fill-mode: forwards;
 	z-index: 10;
 }
 @keyframes navOpen {
-	0% {
-		width: 0px;
-		height: 0px;
-	}
-	100% {
-		width: 100vw;
-		height: 100vh;
+	to {
+		top: 0%;
 	}
 }
