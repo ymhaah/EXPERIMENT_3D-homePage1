@@ -5,14 +5,23 @@
 	--animation-duration: 1s;
 }
 
+section {
+	/* background: linear-gradient(
+		90deg,
+		rgb(20 21 22) 30%,
+		rgba(43, 48, 56, 1) 100%
+	); */
+	background-color: rgb(107, 107, 255);
+}
+
 section .Container .Hero {
 	width: 100%;
 	height: calc(100vh - var(--Header-hight));
-	border: 3px solid black;
 	display: flex;
 }
 
 section .Container .Hero .Hero-Text {
+	height: 90%;
 	z-index: 1;
 }
 
@@ -26,7 +35,143 @@ section .Container .Hero .Hero-Star {
 section .Container .Hero .Hero-Star .swebsit {
 	width: 80%;
 	height: 50%;
-	background-color: blue;
+	padding: 25px;
+	position: relative;
+	z-index: 10;
+	background-color: rgb(80, 78, 237);
 	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -150%);
-	box-shadow: 20px 19px 20px black;
+
+	border-radius: 10px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+section .Container .Hero .Hero-Star .swebsit .CB {
+	height: 20px;
+	width: 80px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+section .Container .Hero .Hero-Star .swebsit .CB span {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+section .Container .Hero .Hero-Star .swebsit .page {
+	width: 80%;
+	height: 85%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(112, 82, 255);
+	margin: 5% auto;
+	animation-delay: 0.5s;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+
+	border-radius: 10px;
+	box-shadow: inset -20px 20px 20px 20px rgb(0 0 0 / 8%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+}
+
+section .Container .Hero .Hero-Star .swebsit .page .pH {
+	width: 100%;
+	height: 20%;
+	background-color: #9f87ff;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.7s;
+	border-radius: 10px;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+}
+section .Container .Hero .Hero-Star .swebsit .page .pm {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3px;
+}
+
+section .Container .Hero .Hero-Star .swebsit .page .pm .pP {
+	width: 70%;
+	height: 80%;
+	background-color: #9f87ff;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.8s;
+	border-radius: 10px;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+}
+
+section .Container .Hero .Hero-Star .swebsit .page .pm .pF {
+	width: 30%;
+	height: 80%;
+	background-color: #9f87ff;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.9s;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+}
+
+section .Container .Hero .Hero-Star .swebsit .adafy1 {
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	border-radius: 10px;
+	background-color: #e3605c;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.1s;
+	top: 10%;
+	right: -5%;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+}
+section .Container .Hero .Hero-Star .swebsit .adafy2 {
+	width: 12rem;
+	height: 12rem;
+	position: absolute;
+	z-index: -1;
+	border-radius: 50%;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.3s;
+	background-color: #ffc85f;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
+	top: 70%;
+}
+section .Container .Hero .Hero-Star .swebsit .adafy3 {
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	border-radius: 0px 40px;
+	transform: rotateY(var(--Hero-star-rotateY)) translate(0, -190%);
+	animation-delay: 0.5s;
+	background-color: #f681c4;
+	top: 95%;
+	right: 10%;
+	z-index: -1;
+	box-shadow: inset 20px -19px 20px 20px rgb(0 0 0 / 3%),
+		0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%),
+		0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%),
+		0 100px 80px rgb(0 0 0 / 12%);
 }
